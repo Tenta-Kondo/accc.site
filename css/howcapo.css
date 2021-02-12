@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-overflow-scrolling: touch;
+}
+.wf-sawarabimincho {
+  font-family: "Sawarabi Mincho";
+}
+p {
+  line-height: 2rem;
+  font-size: 0.875rem;
+}
+
+ul,
+li {
+  list-style: none;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vertical-line::before {
+  content: "";
+  position: absolute;
+  top: -50vh;
+  left: 50%;
+  width: 1px;
+  height: 20vh;
+  background: #aaa;
+  z-index: -10;
+}
+section {
+  padding: 80px 0;
+  background-image: url(../img/black.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.howcapo h3 {
+  font-weight: lighter;
+  padding-top: 1%;
+}
+.title {
+  position: relative;
+  display: inline;
+}
+.title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+.sentence {
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255);
+  font-family: "Sawarabi Gothic";
+  text-align: center;
+  padding: 2%;
+  border-radius: 50px;
+}
+.sentence p {
+  padding-top: 3.5%;
+  text-align: left;
+  margin: 0 auto;
+  width: 70%;
+}
+iframe {
+  margin: 2% 0;
+}
+
+.br {
+  display: none;
+}
+.br2 {
+  display: none;
+}
+
+.hum-title {
+  display: none;
+}
+.info-br {
+  display: none;
+}
+.header-image {
+  display: none;
+}
+.ac-title-br {
+  display: none;
+}
+@keyframes width {
+  to {
+    width: 48%;
+  }
+}
+
+@media (max-width: 1227px) {
+  iframe {
+    width: 85%;
+  }
+}
+.displayBlock {
+  display: block;
+}
+.displayNone {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .vertical-line::before {
+    top: -45vh;
+
+    height: 20vh;
+  }
+  .sentence p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .sentence {
+    padding: 5%;
+  }
+}
+
+
+@media (max-width: 681px) {
+  .image {
+    background-image: url(../img/bati-min.jpg);
+  }
+
+  .vertical-line::before {
+    top: -40vh;
+    height: 15vh;
+  }
+  .sentence p {
+    width: 85%;
+  }
+}
+
+@media (max-width: 564px) {
+  .br {
+    display: block;
+  }
+  .vertical-line::before {
+    top: -35vh;
+    height: 15vh;
+  }
+  iframe {
+    height: 250px;
+  }
+  .sentence h3 {
+    font-size: 3vh;
+  }
+  section {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .vertical-line::before {
+    top: -30vh;
+    height: 10vh;
+  }
+
+  
+  .br2 {
+    display: block;
+  }
+ 
+  .sentence p {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 420px) {
+ 
+  .br-1 {
+    display: none;
+  }
+  .sentence {
+    width: 95%;
+  }
+}
+@media (max-width: 391px) {
+  iframe {
+    height: 150px;
+  }
+  .ac-title-br {
+    display: block;
+  }
+  .sentence span {
+    display: none;
+  }
+  .sentence h3 {
+    margin-bottom: 8%;
+  }
+}
+@media (max-width: 327px) {
+  .br-2 {
+    display: none;
+  }
+  .sentence p {
+    line-height: 4vh;
+  }
+  iframe {
+    margin: 7% 0;
+  }
+}
+
+
+@media (max-width: 300px) {
+  .vertical-line::before {
+    top: -25vh;
+    height: 10vh;
+  }
+}

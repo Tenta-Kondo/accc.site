@@ -1,0 +1,99 @@
+footer {
+  width: 100%;
+  background-color: #002745;
+
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+footer h4 {
+  font-size: 30px;
+  font-family: "Goldman", cursive;
+  margin-left: 1.5%;
+  margin-top: 2%;
+}
+footer p {
+  font-size: 23px;
+  font-family: "Goldman", cursive;
+}
+footer a {
+  font-size: 20px;
+  color: #7e8c9a;
+}
+footer ul {
+  margin-right: 3%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+footer li {
+  font-family: "Goldman", cursive;
+
+  padding: 2px;
+}
+footer a:hover {
+  color: white;
+}
+.footer-logo-br {
+  display: none;
+}
+.top-btn {
+  font-family: "Goldman", cursive;
+  margin-right: 2%;
+  font-size: 5vh;
+}
+
+@media (max-width: 700px) {
+  footer ul {
+    margin-right: 2.5%;
+  }
+  footer li {
+    padding: 1.5px;
+  }
+}
+@media (max-width: 520px) {
+  .footer-logo-br {
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+  footer a {
+    font-size: 15px;
+  }
+  footer h4 {
+    font-size: 25px;
+  }
+  footer p {
+    font-size: 18px;
+  }
+
+  footer li {
+    padding: 1px;
+  }
+}
+@media (max-width: 420px) {
+  footer ul {
+    margin-right: 1%;
+  }
+  footer li {
+    padding: 1px;
+  }
+}
+@media (max-width: 320px) {
+  footer ul {
+    margin-right: 1.5%;
+  }
+  footer li {
+    font-size: 2vh;
+  }
+}
+@media (max-width: 314px) {
+  footer a {
+    font-size: 10px;
+  }
+  footer h4 {
+    font-size: 20px;
+  }
+  footer p {
+    font-size: 13px;
+  }
+}

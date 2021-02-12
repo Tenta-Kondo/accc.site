@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+.wf-sawarabimincho {
+  font-family: "Sawarabi Mincho";
+}
+p {
+  line-height: 2rem;
+  font-size: 0.875rem;
+}
+body {
+  background-image: url(../img/14681795_1307051209305490_612704943420873282_n.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+ul,
+li {
+  list-style: none;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vertical-line::before {
+  content: "";
+  position: absolute;
+  top: -50vh;
+  left: 50%;
+  width: 1px;
+  height: 20vh;
+  background: #aaa;
+  z-index: -10;
+}
+
+main {
+  position: relative;
+}
+.info h2 {
+  font-weight: lighter;
+  padding-top: 1%;
+  padding-bottom: 2.5%;
+}
+.info-content {
+  width: 60%;
+  text-align: left;
+  margin-top: 3%;
+  margin-left: 5%;
+}
+.info-content h2 {
+  margin-left: 20%;
+}
+.info-contents {
+  display: flex;
+  justify-content: space-between;
+}
+.other {
+  margin-top: 8%;
+  width: 30%;
+  text-align: center;
+  font-family: "Sawarabi Gothic";
+}
+.other h2 {
+  font-weight: lighter;
+  margin-bottom: 13%;
+}
+.other a {
+  color: black;
+  font-size: 2.8vh;
+  line-height: 4.6vh;
+  border-bottom: 0.2px solid black;
+}
+.sentence {
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgb(235, 235, 235, 0.9);
+  font-family: "Sawarabi Gothic";
+  text-align: center;
+  padding: 2%;
+  border-radius: 50px;
+  padding-bottom: 3%;
+}
+.move1 {
+  display: none;
+  position: relative;
+}
+.move1::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+  position: absolute;
+  bottom: -50px;
+}
+.move2 {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.move1 a,
+.move2 a {
+  color: rgb(0, 0, 0);
+  border-bottom: solid 0.3px black;
+}
+.prev {
+  margin-left: 5%;
+}
+.next {
+  margin-right: 5%;
+}
+
+
+.br {
+  display: none;
+}
+.br2 {
+  display: none;
+}
+
+.hum-title {
+  display: none;
+}
+.info-br {
+  display: none;
+}
+.header-image {
+  display: none;
+}
+@keyframes width {
+  to {
+    width: 48%;
+  }
+}
+@media (max-width: 1200px) {
+  .info-content p {
+    font-size: 2vh;
+    line-height: 3.6vh;
+  }
+  .info-content h2,
+  .other h2 {
+    font-size: 3vh;
+  }
+  .other a {
+    font-size: 2vh;
+  }
+}
+
+.displayBlock {
+  display: block;
+}
+.displayNone {
+  display: none;
+}
+@media (max-width: 850px) {
+  .info-contents {
+    flex-direction: column;
+  }
+  .info-content {
+    width: 80%;
+
+    margin: 0 auto;
+  }
+  .info-content h2 {
+    margin-left: 0;
+  }
+  .other {
+    margin-top: 15%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    text-align: left;
+  }
+  .move2 {
+    display: none;
+  }
+  .move1 {
+    display: block;
+  }
+  .move1 {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 800px) {
+  .vertical-line::before {
+    top: -45vh;
+
+    height: 20vh;
+  }
+}
+@media (max-width: 765px) {
+  .nav-items {
+    width: 270px;
+  }
+  .batsu {
+    right: 270px;
+  }
+}
+
+@media (max-width: 681px) {
+  .image {
+    background-image: url(../img/bati-min.jpg);
+  }
+
+  .vertical-line::before {
+    top: -40vh;
+    height: 15vh;
+  }
+}
+
+@media (max-width: 564px) {
+  .br {
+    display: block;
+  }
+  .vertical-line::before {
+    top: -35vh;
+    height: 15vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .vertical-line::before {
+    top: -30vh;
+    height: 10vh;
+  }
+
+  .move1 a {
+    font-size: 2vh;
+  }
+}
+
+@media (max-width: 420px) {
+
+  .sentence {
+    width: 95%;
+  }
+}
+
+
+
+@media (max-width: 300px) {
+  .vertical-line::before {
+    top: -25vh;
+    height: 10vh;
+  }
+}
