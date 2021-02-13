@@ -24,7 +24,12 @@ li {
 a {
   text-decoration: none;
 }
-
+body {
+  background-image: url(../img/14681795_1307051209305490_612704943420873282_n.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 .flex {
   display: flex;
   justify-content: center;
@@ -46,10 +51,6 @@ main {
   position: relative;
 }
 section {
-  background-image: url(../img/14681795_1307051209305490_612704943420873282_n.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   padding: 80px 0;
 }
 .hongoudai h3 {
@@ -110,7 +111,6 @@ section {
   position: relative;
 }
 
-
 .br {
   display: none;
 }
@@ -169,7 +169,6 @@ section {
 }
 
 @media (max-width: 700px) {
-  
   .swiper-container {
     width: 350px;
   }
@@ -246,7 +245,6 @@ section {
   }
 }
 @media (max-width: 420px) {
- 
   iframe {
     width: 250px;
     height: 200px;
@@ -265,7 +263,6 @@ section {
 }
 
 @media (max-width: 320px) {
-  
   .swiper-container {
     width: 200px;
   }
@@ -277,7 +274,6 @@ section {
   .br7 {
     display: none;
   }
-
 }
 @media (max-width: 312px) {
   .br-2 {

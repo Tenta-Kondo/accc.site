@@ -31,7 +31,6 @@ a {
   align-items: center;
 }
 
-
 .vertical-line::before {
   content: "";
   position: absolute;
@@ -47,10 +46,6 @@ main {
   position: relative;
 }
 section {
-  background-image: url(../img/YtL6lgCigKdeuAF1611914446_1611914451.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   padding: 80px 0;
 }
 .price h3 {
@@ -164,7 +159,6 @@ table {
   }
 }
 
-
 .displayBlock {
   display: block;
 }
@@ -197,7 +191,6 @@ table {
     padding: 5%;
   }
 }
-
 
 @media (max-width: 681px) {
   .image {
@@ -253,7 +246,6 @@ table {
     height: 10vh;
   }
 
-  
   .note p,
   .note-small p {
     font-size: 2vh;
@@ -274,14 +266,12 @@ table {
   }
 }
 @media (max-width: 420px) {
- 
   .sentence {
     width: 95%;
   }
 }
 
 @media (max-width: 355px) {
-
   .p-title-br {
     display: block;
   }
