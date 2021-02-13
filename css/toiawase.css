@@ -15,7 +15,12 @@ p {
   line-height: 2rem;
   font-size: 0.875rem;
 }
-
+body {
+  background-image: url(../img/XH0FCoSoVOUNwPY1611916096_1611916103.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 ul,
 li {
   list-style: none;
@@ -46,10 +51,6 @@ main {
   position: relative;
 }
 section {
-  background-image: url(../img/XH0FCoSoVOUNwPY1611916096_1611916103.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   padding: 80px 0;
 }
 .contact h3 {
@@ -103,7 +104,7 @@ input,
 textarea {
   font-size: 1.2rem;
 }
-label{
+label {
   text-align: left;
 }
 button {

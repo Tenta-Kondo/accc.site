@@ -30,7 +30,12 @@ a {
   justify-content: center;
   align-items: center;
 }
-
+body {
+  background-image: url(../img/14681795_1307051209305490_612704943420873282_n.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 .vertical-line::before {
   content: "";
   position: absolute;
@@ -46,10 +51,6 @@ main {
   position: relative;
 }
 section {
-  background-image: url(../img/black2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   padding: 80px 0;
 }
 .teacher h3 {
@@ -112,7 +113,6 @@ section {
   margin-top: 8%;
 }
 
-
 .br {
   display: none;
 }
@@ -171,7 +171,6 @@ section {
   .br-1 {
     display: none;
   }
- 
 }
 @media (max-width: 800px) {
   .vertical-line::before {
@@ -200,8 +199,6 @@ section {
     padding: 5%;
   }
 }
-
-
 
 @media (max-width: 681px) {
   .image {
@@ -244,7 +241,7 @@ section {
   .br2 {
     display: block;
   }
-  
+
   .spec p {
     font-size: 2vh;
     line-height: 3vh;
@@ -262,11 +259,9 @@ section {
   .greeting h3 {
     font-size: 2.3vh;
   }
- 
 }
 
 @media (max-width: 420px) {
-  
   .sentence {
     width: 95%;
   }
@@ -287,7 +282,6 @@ section {
   .br7 {
     display: none;
   }
- 
 }
 @media (max-width: 310px) {
   .br-3 {

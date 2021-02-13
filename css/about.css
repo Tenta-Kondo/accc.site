@@ -52,7 +52,9 @@ a {
   background: #aaa;
   z-index: -10;
 }
-
+section {
+  padding: 80px 0;
+}
 .howcapo h3 {
   font-weight: lighter;
   padding-top: 1%;
