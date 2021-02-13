@@ -31,7 +31,6 @@ a {
   align-items: center;
 }
 
-
 .vertical-line::before {
   content: "";
   position: absolute;
@@ -94,8 +93,18 @@ i {
   text-align: left;
 }
 
-iframe {
-  margin-top: 3%;
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+input,
+textarea {
+  font-size: 1.2rem;
+}
+label{
+  text-align: left;
 }
 button {
   width: 60px;
@@ -109,7 +118,6 @@ button {
 button:hover {
   opacity: 0.8;
 }
-
 
 .br {
   display: none;
@@ -139,7 +147,6 @@ button:hover {
   }
 }
 
-
 .displayBlock {
   display: block;
 }
@@ -161,8 +168,6 @@ button:hover {
     font-size: 3vh;
   }
 }
-
-
 
 @media (max-width: 681px) {
   .image {
@@ -208,12 +213,9 @@ button:hover {
     top: -30vh;
     height: 10vh;
   }
-
- 
 }
 
 @media (max-width: 420px) {
-
   .sentence {
     width: 95%;
   }
@@ -239,7 +241,6 @@ button:hover {
   .br7 {
     display: none;
   }
- 
 }
 @media (max-width: 300px) {
   .vertical-line::before {

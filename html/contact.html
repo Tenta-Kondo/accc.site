@@ -57,7 +57,10 @@
           <a href="./index.html"> ACCC KANAGAWA</a>
         </div>
         <div class="header-image">
-          <img src="../img/cropped-1267e4e91d7646eb6af0b53ccc7f6a08-1.png" alt="" />
+          <img
+            src="../img/cropped-1267e4e91d7646eb6af0b53ccc7f6a08-1.png"
+            alt=""
+          />
         </div>
         <div class="hum">
           <a class="hum-menu">
@@ -142,16 +145,32 @@
             albatroz1975out18@ybb.ne.jp
           </i>
 
-          <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSdbXxL6cbYjx23f8wVVQdG-yB4Gok5vz53Fg
-	Cw2CJdupHDkhA/viewform?embedded=true"
-            width="70%"
-            height="673"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
-            >読み込んでいます…</iframe
-          >
+          <form action="../php/input.php" method="POST">
+            <input
+              type="text"
+              name="data[name]"
+              placeholder="氏名(必須)"
+              id="name"
+              　
+            />
+
+            <input
+              type="text"
+              name="data[mailadress]"
+              placeholder="メールアドレス(必須)"
+              id="adress"
+            />
+
+            <textarea
+              name="data[content]"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="お問い合わせ内容"
+              id="content"
+            ></textarea>
+            <button type="submit">送信</button>
+          </form>
         </div>
       </section>
     </main>
