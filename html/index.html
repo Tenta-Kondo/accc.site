@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/accc.shin.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
     <link rel="stylesheet" href="../css/swiper.min.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -267,6 +269,29 @@
           });
         });
       }
+      if (window.matchMedia("(max-width: 1227px)").matches) {
+        $(function () {
+        $(window).scroll(function () {
+          $(function () {
+            var imgPos = $(".header-container").offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > imgPos) {
+              $(".header-image").addClass("bcgi-off2");
+              
+            }
+          });
+          $(function () {
+            var imgPos = $(".header-container").offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (imgPos > scroll) {
+              $(".header-image").removeClass("bcgi-off2");
+            }
+          });
+        });
+      });
+      }
       $(function () {
         $(window).scroll(function () {
           $(function () {
@@ -275,6 +300,7 @@
             var windowHeight = $(window).height();
             if (scroll > imgPos) {
               $(".header-nav").addClass("bcgi-off");
+              
             }
           });
           $(function () {
