@@ -37,7 +37,7 @@ header {
   height: 100%;
 }
 .header-image img {
-  height: 104%;
+  height: 70%;
 }
 .hum span {
   display: block;
@@ -240,7 +240,7 @@ a:hover::after {
     height: 100%;
     position: static;
 
-    margin-left: 5%;
+    margin-left: 4%;
     color: rgb(255, 255, 255);
   }
 
@@ -281,9 +281,10 @@ a:hover::after {
   .hum-title {
     display: block;
     font-family: "Goldman", cursive;
-    font-size: 3vh;
-    line-height: 5vh;
+    font-size: 30px;
+    line-height: 50px;
     font-weight: 400;
+    margin-left: 4%;
   }
   .dropdown {
     display: block;
@@ -321,6 +322,9 @@ a:hover::after {
     align-items: center;
     overflow: hidden;
   }
+  a:hover::after {
+    pointer-events: none;
+  }
 }
 @media (max-width: 847px) {
   .header-title {
@@ -345,6 +349,10 @@ a:hover::after {
 @media (max-width: 765px) {
   .nav-items {
     width: 270px;
+  }
+  .hum-title{
+font-size: 25px;
+line-height: 60px;
   }
   .batsu {
     right: 270px;
