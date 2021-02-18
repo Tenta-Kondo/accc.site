@@ -9,11 +9,7 @@ header {
   position: fixed;
   top: 0;
   z-index: 100;
-  background-color: rgba(255, 255, 255, 0.7);
   background-color: rgba(255, 255, 255, 0.9);
-  background-image: url(../img/bcg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .bcgi-off {
   background-image: none;
@@ -350,9 +346,9 @@ a:hover::after {
   .nav-items {
     width: 270px;
   }
-  .hum-title{
-font-size: 25px;
-line-height: 60px;
+  .hum-title {
+    font-size: 25px;
+    line-height: 60px;
   }
   .batsu {
     right: 270px;
