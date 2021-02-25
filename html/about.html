@@ -85,14 +85,22 @@
               </li>
 
               <li class="class-info">
-                <a href="./class.html" class="border-line"
+                <a class="border-line"
                   ><span class="class-span">Class</span>
-                  <a href="" class="under-btn">
-                    <i class="fas fa-angle-down down"></i>
-                  </a>
+
+                  <i class="fas fa-angle-down down"></i>
                 </a>
 
                 <ul class="dropdown">
+                  <a href="./class.html" class="list-colmun">
+                    <li>
+                      <i
+                        class="fas fa-angle-right list"
+                        style="margin-right: 1%"
+                      ></i>
+                      <h4>クラス一覧</h4>
+                    </li>
+                  </a>
                   <li>
                     <a href="./hongoudai.html" class="drop-item">
                       <i class="fas fa-angle-right" style="margin-right: 1%"></i
@@ -124,7 +132,7 @@
                 <a href="./price.html" class="border-line">Price</a>
               </li>
               <li class="border-line-right">
-                <a href="./contact.html" class="border-line">Contact us</a>
+                <a href="./contact.php" class="border-line">Contact us</a>
               </li>
             </ul>
           </div>
@@ -138,14 +146,53 @@
               About Capoeira <span>:</span><br class="ac-title-br" />
               カポエイラとは
             </h3>
-            <p>
+            <p class="top-sentence">
               カポエイラはブラジルの伝統文化・国技です。<br />
               蹴り等の攻撃がありながら、勝ち負けのない遊びであり、戦いであり、コミュニケーションです。<br
                 class="br-2"
               />
-              皆が特別な存在であり、皆違って良い世界。<br />
+            </p>
+            <p>
               自分を守り、相手を大切にしながら、側転や逆立ち等ユーモアある動きを出し合い、対話を楽しみます。<br />
             </p>
+
+            <div class="accordion-content" style="margin-top: 10px">
+              <h4 class="accordion">カポエイラの歴史と現在</h4>
+              <i class="fas fa-angle-down down"></i>
+            </div>
+            <div class="accordion-contents">
+              <p style="margin-bottom: 2%">
+                16世紀後半、アフリカからブラジルに連れてこられた黒人奴隷達が、<br />
+                それぞれの国のダンス、格闘技、儀式、文化、音楽等を交換し合った結果カポエイラは生み出されました。<br
+                  class="br-1"
+                />
+                その平和性、芸術性が認められ、2014年にユネスコ無形文化遺産に指定されています。<br
+                  class="br-1"
+                />
+              </p>
+            </div>
+            <div class="accordion-content">
+              <h4 class="accordion">カポエイラの組手</h4>
+              <i class="fas fa-angle-down down"></i>
+            </div>
+            <div class="accordion-contents">
+              <p>
+                カポエイラの組手は、jogo(ジョゴ)と呼ばれます。<br
+                  class="br-2"
+                />
+                jogoでは、初心者の方は相手とのコンタクトは少なめですが、帯が上がってくるとコンタクトが増えることもあります。<br
+                  class="br-1"
+                />
+                jogoは、roda(ホーダ)と呼ばれる輪の中で行われます。<br
+                  class="br-1"
+                />
+                rodaは楽器を弾く人を中心として、人が輪になって作ります。<br
+                  class="br-1"
+                />
+
+                rodaは、その時に歌われている歌や楽器の演奏によって雰囲気や盛り上がりが変わり、多種多様な顔を見せてくれます。<br />
+              </p>
+            </div>
             <iframe
               width="75%"
               height="340"
@@ -154,30 +201,6 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
-            <p style="margin-bottom: 2%">
-              16世紀後半、アフリカからブラジルに連れてこられた黒人奴隷達が、<br />
-              それぞれの国のダンス、格闘技、儀式、文化、音楽等を交換し合った結果カポエイラは生み出されました。<br
-                class="br-1"
-              />
-              その平和性、芸術性が認められ、2014年にユネスコ無形文化遺産に指定されています。<br
-                class="br-1"
-              />
-            </p>
-
-            <p>
-              カポエイラの組手は、jogo(ジョゴ)と呼ばれます。<br class="br-2" />
-              jogoでは、初心者の方は相手とのコンタクトは少なめですが、帯が上がってくるとコンタクトが増えることもあります。<br
-                class="br-1"
-              />
-              jogoは、roda(ホーダ)と呼ばれる輪の中で行われます。<br
-                class="br-1"
-              />
-              rodaは楽器を弾く人を中心として、人が輪になって作ります。<br
-                class="br-1"
-              />
-
-              rodaは、その時に歌われている歌や楽器の演奏によって雰囲気や盛り上がりが変わり、多種多様な顔を見せてくれます。<br />
-            </p>
           </div>
         </section>
       </main>
@@ -199,7 +222,7 @@
       </footer>
     </div>
     <script>
-      if (window.matchMedia("(min-width: 1227px)").matches) {
+      if (window.matchMedia("(min-width: 1000px)").matches) {
         $(function () {
           $(window).scroll(function () {
             $(function () {
@@ -249,26 +272,25 @@
         $(".hum").click(function () {
           $(".black").toggleClass("black-bg");
           $(".hum").toggleClass("batsu");
-        });
-      });
-      $(function () {
-        $(".hum").click(function () {
           $(".nav-items").toggle("linear");
         });
       });
 
-      if (window.matchMedia("(min-width: 1227px)").matches) {
+      if (window.matchMedia("(min-width: 999px)").matches) {
         $(function () {
-          $(".class-info").hover(
-            function () {
-              $("ul:not(:animated)", this).slideDown();
-            },
-            function () {
-              $("ul.dropdown", this).slideUp();
-            }
-          );
+          $(".class-info").click(function () {
+            $(".dropdown").stop(true, false).slideToggle("linear");
+          });
         });
       }
+
+      $(function () {
+        $(".accordion-content").click(function () {
+          $(this).next().stop(true, false).slideToggle("linear");
+          $(this).children("i").toggleClass("rotate");
+          $(".accordion").toggleClass("borderNone");
+        });
+      });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
     <script src="../js/in.js"></script>

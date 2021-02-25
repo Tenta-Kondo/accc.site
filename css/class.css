@@ -27,7 +27,7 @@ body::before {
   height: 100vh;
   background-repeat: no-repeat;
   background-position: 50% 100%;
-  background-image:  url(../img/14681795_1307051209305490_612704943420873282_n.jpg);
+  background-image: url(../img/black.jpg);
   background-size: cover;
 }
 ul,
@@ -60,7 +60,8 @@ main {
   position: relative;
 }
 section {
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 23vh;
 }
 .class h3 {
   font-weight: lighter;
@@ -98,6 +99,11 @@ section {
 }
 .class-content {
   width: 250px;
+}
+.class-content p {
+  border-bottom: #000000 0.2px solid;
+  display: table;
+  margin: 0 auto;
 }
 .class-content img {
   width: 100%;
@@ -166,13 +172,13 @@ section {
 }
 @media (max-width: 907px) {
   .class-content h3 {
-    font-size: 2.3vh;
+    font-size: 16px;
   }
   .class-content p {
-    font-size: 1.7vh;
+    font-size: 12px;
   }
   .view {
-    font-size: 2.5vh;
+    font-size: 15px;
   }
 }
 @media (max-width: 800px) {
@@ -185,7 +191,7 @@ section {
 
 @media (max-width: 722px) {
   .class-content p {
-    line-height: 3vh;
+    line-height: 20px;
   }
   .class-content h3 {
     margin-bottom: 5%;
@@ -216,22 +222,7 @@ section {
     margin-top: 5%;
   }
 }
-@media (max-width: 564px) {
-  .br {
-    display: block;
-  }
-  .vertical-line::before {
-    top: -35vh;
-    height: 15vh;
-  }
-
- 
-  section {
-    padding-top: 50px;
-  }
-}
-
-@media (max-width: 488px) {
+@media (max-width: 583px) {
   .class-contents {
     flex-direction: column;
   }
@@ -262,6 +253,20 @@ section {
     width: 80%;
   }
 }
+@media (max-width: 564px) {
+  .br {
+    display: block;
+  }
+  .vertical-line::before {
+    top: -35vh;
+    height: 15vh;
+  }
+
+  section {
+    padding-top: 50px;
+  }
+}
+
 @media (max-width: 480px) {
   .vertical-line::before {
     top: -30vh;

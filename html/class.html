@@ -57,7 +57,10 @@
           <a href="./index.html"> ACCC KANAGAWA</a>
         </div>
         <div class="header-image">
-          <img src="../img/cropped_1267e4e91d7646eb6af0b53ccc7f6a08_1_w_trans.png" alt="" />
+          <img
+            src="../img/cropped_1267e4e91d7646eb6af0b53ccc7f6a08_1_w_trans.png"
+            alt=""
+          />
         </div>
         <div class="hum">
           <a class="hum-menu">
@@ -81,14 +84,22 @@
             </li>
 
             <li class="class-info">
-              <a href="./class.html" class="border-line"
+              <a class="border-line"
                 ><span class="class-span">Class</span>
-                <a href="" class="under-btn">
-                  <i class="fas fa-angle-down down"></i>
-                </a>
+
+                <i class="fas fa-angle-down down"></i>
               </a>
 
               <ul class="dropdown">
+                <a href="./class.html" class="list-colmun">
+                  <li>
+                    <i
+                      class="fas fa-angle-right list"
+                      style="margin-right: 1%"
+                    ></i>
+                    <h4>クラス一覧</h4>
+                  </li>
+                </a>
                 <li>
                   <a href="./hongoudai.html" class="drop-item">
                     <i class="fas fa-angle-right" style="margin-right: 1%"></i
@@ -114,7 +125,7 @@
               <a href="./price.html" class="border-line">Price</a>
             </li>
             <li class="border-line-right">
-              <a href="./contact.html" class="border-line">Contact us</a>
+              <a href="./contact.php" class="border-line">Contact us</a>
             </li>
           </ul>
         </div>
@@ -181,7 +192,7 @@
     </footer>
 
     <script>
-      if (window.matchMedia("(min-width: 1227px)").matches) {
+      if (window.matchMedia("(min-width: 1000px)").matches) {
         $(function () {
           $(window).scroll(function () {
             $(function () {
@@ -231,24 +242,15 @@
         $(".hum").click(function () {
           $(".black").toggleClass("black-bg");
           $(".hum").toggleClass("batsu");
-        });
-      });
-      $(function () {
-        $(".hum").click(function () {
           $(".nav-items").toggle("linear");
         });
       });
 
-      if (window.matchMedia("(min-width: 1227px)").matches) {
+      if (window.matchMedia("(min-width: 999px)").matches) {
         $(function () {
-          $(".class-info").hover(
-            function () {
-              $("ul:not(:animated)", this).slideDown();
-            },
-            function () {
-              $("ul.dropdown", this).slideUp();
-            }
-          );
+          $(".class-info").click(function () {
+            $(".dropdown").stop(true, false).slideToggle("linear");
+          });
         });
       }
     </script>

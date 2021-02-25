@@ -110,11 +110,10 @@ header {
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+
   margin-top: 200px;
   position: relative;
 }
-
 
 .history-box h1,
 .history-box p {
@@ -388,7 +387,7 @@ main {
     height: 100%;
   }
   header {
-    height: 50vh !important;
+    height: 60vh !important;
   }
 }
 @media (max-width: 564px) {
@@ -427,6 +426,9 @@ main {
   }
   .gallery h1 {
     font-size: 30px;
+  }
+  .header-p {
+    top: -12vh;
   }
 }
 

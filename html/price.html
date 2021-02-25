@@ -84,14 +84,22 @@
             </li>
 
             <li class="class-info">
-              <a href="./class.html" class="border-line"
+              <a class="border-line"
                 ><span class="class-span">Class</span>
-                <a href="" class="under-btn">
-                  <i class="fas fa-angle-down down"></i>
-                </a>
+
+                <i class="fas fa-angle-down down"></i>
               </a>
 
               <ul class="dropdown">
+                <a href="./class.html" class="list-colmun">
+                  <li>
+                    <i
+                      class="fas fa-angle-right list"
+                      style="margin-right: 1%"
+                    ></i>
+                    <h4>クラス一覧</h4>
+                  </li>
+                </a>
                 <li>
                   <a href="./hongoudai.html" class="drop-item">
                     <i class="fas fa-angle-right" style="margin-right: 1%"></i
@@ -117,7 +125,7 @@
               <a href="./price.html" class="border-line">Price</a>
             </li>
             <li class="border-line-right">
-              <a href="./contact.html" class="border-line">Contact us</a>
+              <a href="./contact.php" class="border-line">Contact us</a>
             </li>
           </ul>
         </div>
@@ -155,21 +163,28 @@
               </ul>
             </div>
           </div>
+          <hr size="2" color="#dcdcdc" />
           <div class="block2">
             <h3 class="title">
               Price <span>:</span><br class="p-title-br" />
               <span class="title-span">料金案内/入会について</span>
             </h3>
-            <h4 style="padding-top: 2.5%">・レッスン料</h4>
-            <div class="note-small">
+            <div class="accordion-content once">
+              <h4 class="accordion">・レッスン料</h4>
+              <i class="fas fa-angle-down down"></i>
+            </div>
+
+            <div class="note-small accordion-contents">
               <ul>
                 <li>
-                  <p>団体会員：<span class="important">2,000円（1回）</span></p>
+                  <p>
+                    団体会員：<span class="important">2,000円（1コマ）</span>
+                  </p>
                 </li>
                 <li>
                   <p>
                     体験／ビジター：<span class="important"
-                      >2,000円（1回）</span
+                      >2,000円（1コマ）</span
                     >
                   </p>
                 </li>
@@ -184,13 +199,16 @@
                 </li>
               </ul>
             </div>
-
-            <h4 class="kaihi">・入会費/規約・年会費について</h4>
-            <div class="note">
+            <div class="accordion-content">
+              <h4 class="kaihi accordion">・入会費/規約・年会費について</h4>
+              <i class="fas fa-angle-down down"></i>
+            </div>
+            <div class="note accordion-contents">
               <ul>
                 <li>
                   <p>
                     入会を希望する場合は、来て頂いた際に配る入会規約に目を通し、ご理解した上で、<br />入会金5,000円と初年度会費3,500円(合計8,500円)をお支払いください。
+                    ご家族で2人目以降にご入会される方は入会費無料となり、年会費のみのお支払いとさせて頂きます。
                   </p>
                 </li>
                 <li>
@@ -209,14 +227,10 @@
                     部外者への配付、譲渡、コピーなど明らかになった場合は会員として権利を喪失し、資料を返却して頂きますのでご注意ください。
                   </p>
                 </li>
-                <li>
-                  <p>
-                    ご家族で2人目以降にご入会される方は入会費無料となり、年会費のみのお支払いとさせて頂きます。
-                  </p>
-                </li>
               </ul>
             </div>
           </div>
+          <hr size="2" color="#dcdcdc" style="margin-top: 4vh" />
           <div class="block3">
             <h3 id="ticket" class="title">
               Ticket <span>:</span><br class="p-title-br" />
@@ -255,9 +269,7 @@
                 </tr>
                 <tr>
                   <td>◆Eチケット（16回分）</td>
-                  <td>
-                    25,000円（1レッスンあたり1,563円：週方ペースの人向け）
-                  </td>
+                  <td>25,000円（1レッスンあたり1,563円：週2ペースの人向け）</td>
                 </tr>
               </tbody>
             </table>
@@ -293,7 +305,7 @@
     </footer>
 
     <script>
-      if (window.matchMedia("(min-width: 1227px)").matches) {
+      if (window.matchMedia("(min-width: 1000px)").matches) {
         $(function () {
           $(window).scroll(function () {
             $(function () {
@@ -343,26 +355,25 @@
         $(".hum").click(function () {
           $(".black").toggleClass("black-bg");
           $(".hum").toggleClass("batsu");
-        });
-      });
-      $(function () {
-        $(".hum").click(function () {
           $(".nav-items").toggle("linear");
         });
       });
 
-      if (window.matchMedia("(min-width: 1227px)").matches) {
+      if (window.matchMedia("(min-width: 999px)").matches) {
         $(function () {
-          $(".class-info").hover(
-            function () {
-              $("ul:not(:animated)", this).slideDown();
-            },
-            function () {
-              $("ul.dropdown", this).slideUp();
-            }
-          );
+          $(".class-info").click(function () {
+            $(".dropdown").stop(true, false).slideToggle("linear");
+          });
         });
       }
+
+      $(function () {
+        $(".accordion-content").click(function () {
+          $(this).next().stop(true, false).slideToggle("linear");
+          $(this).children("i").toggleClass("rotate");
+          $(".accordion").toggleClass("borderNone");
+        });
+      });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
     <script src="../js/in.js"></script>

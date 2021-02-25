@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/toiawase.css" />
+    <link rel="stylesheet" href="../css/success.css" />
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/footer.css" />
     <link rel="stylesheet" href="../css/swiper.min.css" />
@@ -79,19 +79,28 @@
             <li class="border-line-right">
               <a href="./about.html" class="border-line">About Capoeira</a>
             </li>
+
             <li class="border-line-right">
               <a href="./teacher.html" class="border-line">Teacher</a>
             </li>
 
             <li class="class-info">
-              <a href="./class.html" class="border-line"
+              <a class="border-line"
                 ><span class="class-span">Class</span>
-                <a href="" class="under-btn">
-                  <i class="fas fa-angle-down down"></i>
-                </a>
+
+                <i class="fas fa-angle-down down"></i>
               </a>
 
               <ul class="dropdown">
+                <a href="./class.html" class="list-colmun">
+                  <li>
+                    <i
+                      class="fas fa-angle-right list"
+                      style="margin-right: 1%"
+                    ></i>
+                    <h4>クラス一覧</h4>
+                  </li>
+                </a>
                 <li>
                   <a href="./hongoudai.html" class="drop-item">
                     <i class="fas fa-angle-right" style="margin-right: 1%"></i
@@ -117,62 +126,17 @@
               <a href="./price.html" class="border-line">Price</a>
             </li>
             <li class="border-line-right">
-              <a href="./contact.html" class="border-line">Contact us</a>
+              <a href="./contact.php" class="border-line">Contact us</a>
             </li>
           </ul>
         </div>
       </div>
     </header>
+
     <main>
-      <section class="contact">
-        <div class="sentence" style="margin-bottom: 10%">
-          <h3 class="title">
-            Contact us <span>:</span><br class="c-title-br" />
-            お問い合わせ
-          </h3>
-          <p style="padding-top: 5%">
-            体験予約・見学予約・ご質問等ございましたら、<br
-              class="br-1"
-            />お気軽に下記フォームもしくは下記メールアドレス、あるいはお電話にてお問い合わせ下さい。
-          </p>
-          <p>
-            フォームもしくはメールの場合、後日下記メールアドレスより指導者が返信させていただきます。
-          </p>
-          <i>
-            Tell :<br class="br-2" />
-            090-4675-3002 <br />
-            Mail :<br class="br-2" />
-            albatroz1975out18@ybb.ne.jp
-          </i>
-
-          <form action="../php/input.php" method="POST">
-            <input
-              type="text"
-              name="data[name]"
-              placeholder="氏名(必須)"
-              id="name"
-              　
-            />
-
-            <input
-              type="text"
-              name="data[mailadress]"
-              placeholder="メールアドレス(必須)"
-              id="adress"
-            />
-
-            <textarea
-              name="data[content]"
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="お問い合わせ内容"
-              id="content"
-            ></textarea>
-            <button type="submit">送信</button>
-          </form>
-        </div>
-      </section>
+      <h3>送信完了</h3>
+      <p>お問い合わせありがとうございます。</p>
+      <a href="./index.html">HOMEへ戻る</a>
     </main>
     <footer>
       <h4>
@@ -192,36 +156,10 @@
     </footer>
 
     <script>
-      if (window.matchMedia("(min-width: 1227px)").matches) {
-        $(function () {
-          $(window).scroll(function () {
-            $(function () {
-              var imgPos = $("section").offset().top;
-              var scroll = $(window).scrollTop();
-              var windowHeight = $(window).height();
-              if (scroll > imgPos) {
-                $(".header-nav").css("height", "6vh");
-                $(".header-title").css("display", "none");
-                $(".nav-items").css("top", "0");
-              }
-            });
-            $(function () {
-              var imgPos = $("section").offset().top;
-              var scroll = $(window).scrollTop();
-              var windowHeight = $(window).height();
-              if (imgPos > scroll) {
-                $(".header-nav").css("height", "13vh");
-                $(".header-title").css("display", "block");
-                $(".nav-items").css("top", "6vh");
-              }
-            });
-          });
-        });
-      }
       $(function () {
         $(window).scroll(function () {
           $(function () {
-            var imgPos = $("section").offset().top;
+            var imgPos = $(".header-container").offset().top;
             var scroll = $(window).scrollTop();
             var windowHeight = $(window).height();
             if (scroll > imgPos) {
@@ -229,7 +167,7 @@
             }
           });
           $(function () {
-            var imgPos = $("section").offset().top;
+            var imgPos = $(".header-container").offset().top;
             var scroll = $(window).scrollTop();
             var windowHeight = $(window).height();
             if (imgPos > scroll) {
@@ -238,30 +176,54 @@
           });
         });
       });
+
       $(function () {
         $(".hum").click(function () {
           $(".black").toggleClass("black-bg");
           $(".hum").toggleClass("batsu");
-        });
-      });
-      $(function () {
-        $(".hum").click(function () {
           $(".nav-items").toggle("linear");
         });
       });
 
-      if (window.matchMedia("(min-width: 1227px)").matches) {
+      if (window.matchMedia("(min-width: 999px)").matches) {
         $(function () {
-          $(".class-info").hover(
-            function () {
-              $("ul:not(:animated)", this).slideDown();
-            },
-            function () {
-              $("ul.dropdown", this).slideUp();
-            }
-          );
+          $(".class-info").click(function () {
+            $(".dropdown").stop(true, false).slideToggle("linear");
+          });
         });
       }
+
+      $(function () {
+        $(window).scroll(function () {
+          $(function () {
+            var imgPos = $(".n-1").offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > imgPos - windowHeight + windowHeight / 3) {
+              $(".n-1").addClass("fade-on");
+            }
+          });
+        });
+      });
+      $(function () {
+        $(window).scroll(function () {
+          $(function () {
+            var imgPos = $(".n-2").offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > imgPos - windowHeight + windowHeight / 4) {
+              $(".n-2").addClass("fade-on");
+            }
+          });
+        });
+      });
+
+      $(function () {
+        $(".top").click(function () {
+          event.preventDefault();
+          $("html, body").animate({ scrollTop: 0 }, 50);
+        });
+      });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
     <script src="../js/in.js"></script>

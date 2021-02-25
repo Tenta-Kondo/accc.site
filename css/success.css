@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-overflow-scrolling: touch;
+}
+.wf-sawarabimincho {
+  font-family: "Sawarabi Mincho";
+}
+p {
+  line-height: 2rem;
+  font-size: 0.875rem;
+}
+
+ul,
+li {
+  list-style: none;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  height: 40vh;
+  margin-top: 10vh;
+}
+a {
+  color: black;
+  border-bottom: black solid 0.2px;
+  text-decoration: none;
+}
+a:hover {
+  color: blue;
+  border-bottom: blue solid 0.2px;
+}

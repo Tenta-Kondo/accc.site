@@ -84,14 +84,22 @@
             </li>
 
             <li class="class-info">
-              <a href="./class.html" class="border-line"
+              <a class="border-line"
                 ><span class="class-span">Class</span>
-                <a href="" class="under-btn">
-                  <i class="fas fa-angle-down down"></i>
-                </a>
+
+                <i class="fas fa-angle-down down"></i>
               </a>
 
               <ul class="dropdown">
+                <a href="./class.html" class="list-colmun">
+                  <li>
+                    <i
+                      class="fas fa-angle-right list"
+                      style="margin-right: 1%"
+                    ></i>
+                    <h4>クラス一覧</h4>
+                  </li>
+                </a>
                 <li>
                   <a href="./hongoudai.html" class="drop-item">
                     <i class="fas fa-angle-right" style="margin-right: 1%"></i
@@ -117,7 +125,7 @@
               <a href="./price.html" class="border-line">Price</a>
             </li>
             <li class="border-line-right">
-              <a href="./contact.html" class="border-line">Contact us</a>
+              <a href="./contact.php" class="border-line">Contact us</a>
             </li>
           </ul>
         </div>
@@ -125,7 +133,7 @@
     </header>
     <main>
       <section class="info">
-        <div class="sentence" style="margin-top: 80px; margin-bottom: 10%">
+        <div class="sentence" style="margin-top: 8%; margin-bottom: 10%">
           <div class="info-contents">
             <div class="info-content">
               <h2>休講のお知らせ</h2>
@@ -201,7 +209,7 @@
     </footer>
 
     <script>
-      if (window.matchMedia("(min-width: 1227px)").matches) {
+      if (window.matchMedia("(min-width: 1000px)").matches) {
         $(function () {
           $(window).scroll(function () {
             $(function () {
@@ -251,13 +259,10 @@
         $(".hum").click(function () {
           $(".black").toggleClass("black-bg");
           $(".hum").toggleClass("batsu");
-        });
-      });
-      $(function () {
-        $(".hum").click(function () {
           $(".nav-items").toggle("linear");
         });
       });
+
       $(function () {
         var prev = $(".kyuukou").next("li");
         var prev2 = $(prev).children("a").attr("href");
@@ -267,16 +272,12 @@
         var next2 = $(next).children("a").attr("href");
         $(".next a").attr("href", next2);
       });
-      if (window.matchMedia("(min-width: 1227px)").matches) {
+
+      if (window.matchMedia("(min-width: 999px)").matches) {
         $(function () {
-          $(".class-info").hover(
-            function () {
-              $("ul:not(:animated)", this).slideDown();
-            },
-            function () {
-              $("ul.dropdown", this).slideUp();
-            }
-          );
+          $(".class-info").click(function () {
+            $(".dropdown").stop(true, false).slideToggle("linear");
+          });
         });
       }
     </script>
